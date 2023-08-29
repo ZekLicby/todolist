@@ -6,9 +6,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.taskContainer}>
-
+      teste testes teste pra ver se vai algo
       </View>
-      {/* <StatusBar style="auto" /> */}
+      <StatusBar style="auto" />
       <StatusBarComponent taskQuantity={5}/>
     </View>
   );
