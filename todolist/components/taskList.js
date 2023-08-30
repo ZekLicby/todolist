@@ -1,14 +1,14 @@
-import { View } from "react-native"
+import { FlatList, Text, View } from "react-native"
 
 export const TaskList = ({taskList}) => {
 
     return(
         <View>
-            {taskList?.map(item => {return(
-                <View>
-
-                </View>
-            )})}
+            <FlatList
+            data={taskList}
+            renderItem={({item}) => <Text>{item}</Text>}
+            keyExtractor={(item, index) => `${index}`}
+            />
         </View>
     )
 }
