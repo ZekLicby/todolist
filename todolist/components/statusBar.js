@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native"
+import { StyleSheet, Text, View } from "react-native"
 
 export const StatusBar = ({taskQuantity}) => {
 
@@ -13,7 +13,6 @@ export const StatusBar = ({taskQuantity}) => {
 
 const styles = StyleSheet.create({
     container: {
-        display: flex,
         flexDirection: "row-reverse",
         padding: "2.5px",
     }
